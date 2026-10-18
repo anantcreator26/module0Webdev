@@ -1,0 +1,49 @@
+
+.scene {
+    width: 300px;
+    height: 350px;
+    perspective: 500px;
+    perspective-origin: center;
+    margin: 100px auto;
+}
+
+.gallery {
+    width: 200px;
+    height: 280px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateY(-25deg) rotateX(10deg);
+}
+
+.gallery img {
+    position: absolute;
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 12px;
+}
+
+.gallery img:nth-child(1) {
+    transform: translateZ(100px);
+}
+
+.gallery img:nth-child(2) {
+    transform: rotateY(60deg) translateZ(100px);
+}
+
+.gallery img:nth-child(3) {
+    transform: rotateY(120deg) translateZ(100px);
+}
+
+.gallery img:nth-child(4) {
+    transform: rotateY(180deg) translateZ(100px);
+}
+
+.gallery img:nth-child(5) {
+    transform: rotateY(240deg) translateZ(100px);
+}
+
+.gallery img:nth-child(6) {
+    transform: rotateY(300deg) translateZ(100px);
+}
